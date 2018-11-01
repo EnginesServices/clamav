@@ -15,12 +15,29 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "timestamp": "2018-11-01T13:06:31+11:00"
   },
   "software": {
     "base": {
+      "name": "clamav",
+      "cardinal": "clamav",
+      "publisher_namespace": "EnginesSystem",
+      "type_path": "clamav",
+      "deployment_type": "worker",
+      "hostname": "clamav",
+      "set_state": "nocontainer",
       "default_stop_timeout": 0,
-      "restart_attempts": 0
+      "restart_attempts": 0,
+      "memory": {
+        "required": 384,
+        "recommended": 256
+      },
+      "run_as_user": "clamav",
+      "create_user": "0"
+    },
+    "disposition": {
+      "consumerless": true
     }
   }
 }
